@@ -39,6 +39,21 @@ ImageSysC-SoC is a comprehensive full-stack image processing System-on-Chip (SoC
 3. **Real-Time Constraints**: Maintains efficient image processing by leveraging the capabilities of the AXI bus and GPIO.
 4. **Modular Approach**: Facilitates easy integration and replacement of different processing modules without impacting the overall design.
 
+# Getting Started
+
+## Build Code
+Enter the HW4 directory and run the command: cd build && make && cd ..
+
+## Run Code
+Any jpg image can be used but three are provided with the names: coins.jpg, grayscale.jpg, and pattern.jpg
+
+By default, the processing module will use the Median Filter. However, the filter can be changed by either supplying the word "median" or "sobel" after the filename of the image as a command line argument.
+
+To run code, make sure to be in the HW4 directory and execute:
+./build/SystemCOpenCV filename filter
+
+Example: ./build/SystemCOpenCV coins.jpg sobel
+
 ## Conclusion
 ImageSysC-SoC showcases the integration of high-level hardware modeling and verification with real-time image processing. By combining SystemC, UVM, and OpenCV, this project provides a practical example of full-stack SoC design, emphasizing flexibility, scalability, and efficiency.
 
